@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center text-xs mt-12">
-          © 2023 capstone. All rights reserved
+          © 2025 Capstone. All rights reserved
         </div>
       </div>
     </footer>

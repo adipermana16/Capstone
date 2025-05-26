@@ -4,10 +4,69 @@
 body {
     background: linear-gradient(to right, #fff, #f73093);
     margin: 0;
+    min-height: 100vh;
 }
+
+#root {
+    min-height: 100vh;
+}
+
+/* === Navbar Styles === */
+nav {
+  background-color: #2d3f9f !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* Container */
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Flex Layout */
+nav .flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  nav .flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Navigation Links */
+nav a {
+  color: white !important;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2d3f9f !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  nav .space-y-2 {
+    margin-top: 0;
+  }
+  
+  nav .md\:space-x-8 > * + * {
+    margin-left: 2rem;
+  }
+}
+
 /* === Footer Styles === */
 footer {
-  background-color: #008000; /* asumsi 'bg-green' = green */
+  background-color: #2d3f9f;
   color: white;
   padding: 3rem 0;
 }
