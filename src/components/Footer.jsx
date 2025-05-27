@@ -2,52 +2,34 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className="bg-green text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="font-medium mb-4 border-b border-[#ffffff]/20 pb-2">
-              ABOUT
-            </h3>
-            <p className="text-sm">A vision</p>
-          </div>
-
-          <div>
-            <h3 className="font-medium mb-4 border-b border-[#ffffff]/20 pb-2">
-              Quick Links
-            </h3>
-            <ul className="text-sm space-y-2">
-              <li>
-                <a href="#" className="no-underline">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="no-underline">
-                  Edukasi
-                </a>
-              </li>
-              <li>
-                <a href="#" className="no-underline">
-                  Berita
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-medium mb-4 border-b border-[#ffffff]/20 pb-2">
-              Contact
-            </h3>
-            <p className="text-sm">exampleemail@gmail.com</p>
-            <p className="text-sm">+62xxxxxxxxxxx</p>
-          </div>
-        </div>
-
-        <div className="text-center text-xs mt-12">
-          © 2025 Capstone. All rights reserved
-        </div>
+    <footer className="bg-green-700 text-white ">
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-sm flex-grow ">
+      <div>
+        <h4 className="font-semibold mb-2">Menu</h4>
+        <ul>
+          <li><a href="#" className="hover:underline">Home</a></li>
+          <li><a href="#" className="hover:underline">About</a></li>
+          <li><a href="#" className="hover:underline">Contact</a></li>
+        </ul>
       </div>
-    </footer>
-  );
+      <div>
+        <h4 className="font-semibold mb-2">Support</h4>
+        <ul>
+          <li><a href="#" className="hover:underline">Help Center</a></li>
+          <li><a href="#" className="hover:underline">Terms of Service</a></li>
+          <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold mb-2">Follow Us</h4>
+        <ul>
+          <li><a href="#" className="hover:underline">Facebook</a></li>
+          <li><a href="#" className="hover:underline">Instagram</a></li>
+          <li><a href="#" className="hover:underline">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div className="text-center text-xs mt-6">© 2025 Youware. All rights reserved.</div>
+  </footer>
+  )
 }
