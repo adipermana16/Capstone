@@ -1,5 +1,6 @@
 import React from "react";
 import Videocard from "./Video-card";
+import InputGambar from "./input-gambar";
 
 export default function About() {
   return (
@@ -43,7 +44,8 @@ export default function About() {
         <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-8">
           Waste Detection
         </h2>
-        <Videocard />
+        <InputGambar />
+        {/* <Videocard /> */}
       </div>
 
       {/* Capstone Section */}
